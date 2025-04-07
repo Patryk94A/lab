@@ -1,6 +1,6 @@
 # Learning Log - Will add here some learning updates what i am currently working on and what i did.
 ## 07-04-2025
-- Learned all about Git-commands and github
+- Learned all about Git-commands and github to be able to go further from Udemy "Git i Github: przewodnik dla poczatkujacych"
 - TODO for tomorrow is to git push first file.yaml into Github
 
 ## 06-04-2025
