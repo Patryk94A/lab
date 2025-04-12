@@ -1,5 +1,9 @@
 # Learning Log - Will add here some learning updates what i am currently working on and what i did.
 
+## 11-04-2025
+- I have set some aliases, I have installed minikube(had some linux issues and actually fixed them by reinstalling Docker) started actually a new Udemy course with more detailed explanations.
+- Tried to push some items into github, but encountered some errors so was playing around with that.
+
 ## 09-04-2025
 - Deployed first mealie app with .yaml file and checked it with portforwarding on my localhost
 
