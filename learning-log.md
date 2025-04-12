@@ -1,4 +1,8 @@
 # Learning Log - Will add here some learning updates what i am currently working on and what i did.
+## 12-04-2025
+- Learned today about env and envFrom.
+- Under the spec: in YAML there is a important restartpolicy: that can be set as needed.
+- Also learned about labels and how we can select them using --selector 
 
 ## 11-04-2025
 - I have set some aliases, I have installed minikube(had some linux issues and actually fixed them by reinstalling Docker) started actually a new Udemy course with more detailed explanations.
