@@ -1,0 +1,3 @@
+[submodule "kubernetes-course"]
+	path = kubernetes-course
+	url = https://github.com/Patryk94A/kubernetes-course.git
