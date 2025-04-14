@@ -1,4 +1,10 @@
 # Learning Log - Will add here some learning updates what i am currently working on and what i did.
+## 14-04-2025
+- Today i have learned basics about Services - it loadbalances pods tested it on app-deployment.yaml
+- Also tested "kubectl exec -it <podname> -- bash" to get into the pod
+- Basic of Proxy "localhost:port/api/v1/pods"
+- And as last i learned about Namespaces=isolation in two-different-namespaces.yaml
+
 ## 12-04-2025
 - Learned today about env and envFrom.
 - Under the spec: in YAML there is a important restartpolicy: that can be set as needed.
