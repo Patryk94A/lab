@@ -1,4 +1,13 @@
 # Learning Log - Will add here some learning updates what i am currently working on and what i did.
+## 15-04-2025
+- Today i learned about Namespace and DNS
+- Some Secrets
+- Pods resources - limits: and requests and how to put them
+- And about Probes, that there are 3 kind of probes
+- And important one rollingUpdate and Recreate and difference  
+- And I started my first little project to try testing out the theory in practice, will try to finish it tomorrow and push it to GitHub."
+
+
 ## 14-04-2025
 - Today i have learned basics about Services - it loadbalances pods tested it on app-deployment.yaml
 - Also tested "kubectl exec -it <podname> -- bash" to get into the pod
