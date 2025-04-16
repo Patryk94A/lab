@@ -1,4 +1,8 @@
 # Learning Log - Will add here some learning updates what i am currently working on and what i did.
+## 16-05-2025
+- Today i tried to created some .yaml files with some basic replicaset and deployment.
+- Also started new Jenkins course and configured my Homelab laptop with Ubuntu on it.
+
 ## 15-04-2025
 - Today i learned about Namespace and DNS
 - Some Secrets
