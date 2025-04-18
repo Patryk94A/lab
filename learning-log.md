@@ -1,4 +1,23 @@
 # Learning Log - Will add here some learning updates what i am currently working on and what i did.
+## 16-05-2025
+- Today i tried to created some .yaml files with some basic replicaset and deployment.
+- Also started new Jenkins course and configured my Homelab laptop with Ubuntu on it.
+
+## 15-04-2025
+- Today i learned about Namespace and DNS
+- Some Secrets
+- Pods resources - limits: and requests and how to put them
+- And about Probes, that there are 3 kind of probes
+- And important one rollingUpdate and Recreate and difference  
+- And I started my first little project to try testing out the theory in practice, will try to finish it tomorrow and push it to GitHub."
+
+
+## 14-04-2025
+- Today i have learned basics about Services - it loadbalances pods tested it on app-deployment.yaml
+- Also tested "kubectl exec -it <podname> -- bash" to get into the pod
+- Basic of Proxy "localhost:port/api/v1/pods"
+- And as last i learned about Namespaces=isolation in two-different-namespaces.yaml
+
 ## 12-04-2025
 - Learned today about env and envFrom.
 - Under the spec: in YAML there is a important restartpolicy: that can be set as needed.
