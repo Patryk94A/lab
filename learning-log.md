@@ -1,5 +1,15 @@
 # Learning Log - Will add here some learning updates what i am currently working on and what i did.
-## 16-05-2025
+## 19-04-2025CD
+- Finished configuring Jenkins on Ubuntu and doing another course on Udemy with CI/CD and Jenkins
+- Tested it with some basic script and get to know what it is all about
+- Tested it with some scheduler and how it works and made some notes.
+- Did also Storage classes on kuberneter course
+
+## 18-04-2025
+- Uploaded Request_volumen_PersistentVolumeClaIm.yaml with some instructions in it.
+- Did Volumens-topic and tested how it works on minikube.
+
+## 16-04-2025
 - Today i tried to created some .yaml files with some basic replicaset and deployment.
 - Also started new Jenkins course and configured my Homelab laptop with Ubuntu on it.
 
