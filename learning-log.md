@@ -1,5 +1,5 @@
 # Learning Log - Will add here some learning updates what i am currently working on and what i did.
-## 19-04-2025CD
+## 19-04-2025
 - Finished configuring Jenkins on Ubuntu and doing another course on Udemy with CI/CD and Jenkins
 - Tested it with some basic script and get to know what it is all about
 - Tested it with some scheduler and how it works and made some notes.
