@@ -1,1 +1,8 @@
+I will post here all the commands are usefull in my opinion and i might need them in the future
+
+Ifconfig -
+su - switch user
+passwd userid
+ls -ltr -> time creation new -> old
+cp -R <source_folder><destination_folder> -> copy folder -R recursive
 
