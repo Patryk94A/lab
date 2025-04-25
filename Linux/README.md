@@ -7,3 +7,6 @@ I will be addind here some useful things regarding Linux i come across.
               ctrl + a + tab                     => to move between screens
               ctrl + a + c or screen-command     => to get into the screen
 
+My first bash script:
+
+for i in {1..10}; do echo "characters$i" >> seinfeld-characters; done   = iterates from 1 to 10 and then starts to append characters into seinfeld-characters file
