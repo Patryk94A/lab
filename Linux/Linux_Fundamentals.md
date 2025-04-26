@@ -142,3 +142,55 @@ cut -c1,2,4       = first, second, foruth characters
 cut -c1-3         = characters 1 -> 3
 cut -d: -f 6 /etc/passw      = delimiter : (used to separate field); -f filter/field; 6 at sixth position
 ls-l | cut -c1-10            = will show 1 to 10 characters starting from the left from ls-l command
+
+AWK
+- awk '{print$1}' filename = list 1st field from a file
+- ls -l | awk '{print$1, $3}'  = list 1 and 3rd field of ls -l output
+- ls -l | awk '{print$NF}'     = will print last colom
+- awk '/Jerry/{print}' file    = will search for specific character
+- awk -F: '{print$1}' /etc/passwd = output first field, -F: delimiter
+
+GREP / EGREP
+- grep keyword file  = Search for a keyword
+- grep -c keyword file  = Search and Count
+- grep -i keyword file  = Search and Ignore Case sensitive
+- grep -n keyword file  = Matched lines and line number
+- egrep -i "keyword | keyword2" file = search for 2 keywords
+
+SORT / UNIQ
+- sort file      = sorts file in alphabetical order
+- sort -r file   = reverse alphabetical order
+- sort -k2 file  = search colom 2
+- uniq           = Removes duplicate
+- sort file | uniq = Always sort before uniq
+- sort file | uniq -c = this will caunt
+
+WC - word caunter
+- wc file        = check line caunt, word and byte
+- wc -l          = check lines
+- wc -w          = check words
+- wc -c          = check bytes
+ls -l | wc -l
+
+COMPARE FILES
+- diff (line by line)
+- cmp (Byte by byte)
+
+COMPARE AND UNCOMPRESS FILES
+- tar =
+- gzip  = compress
+- gzip -d OR gunzip  = unzip
+
+TRUNCATE FILE SIZE
+- truncate -s 10 filename   = chop file into 10 bytes
+- truncate -s 60 filename   = make it more bytes if originally was les
+
+COMBING AND SPLITTING FILES
+- cat file1 file2 file3 > file4
+- split file4
+- e.g. split -l 300 file.txt childfile
+
+EXECUTING MULTIPLE COMMANDS WITH ;
+- Command = ls ; ipconfig 'pwd
+- mkdir test_dir ; cd test_dir ; touch test_dir.txt
+- ; this will execute files after each other
