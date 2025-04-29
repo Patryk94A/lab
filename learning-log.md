@@ -1,4 +1,8 @@
 # Learning Log - Will add here some learning updates what i am currently working on and what i did.
+## 29-04-2025
+- As there is Linux needed for almost every subject regarding DevOps i decided to learn that first. I already have some basic with that and almost finishing my Linux course on Udemy
+- When i finish my Linux course will come back to Kubernetes/Jenkins and other staff. One thing at a time.
+
 ## 20-04-2025
 - Configured and started Linux course 
 
