@@ -1,3 +1,23 @@
+ALIASES (alias)
+to create an temporary alias (will be gone after reboot)
+- alias ls="ls-al"
+- alias pl="pwd;ls"
+- alias tell="whoami; hostname; pwd"
+- alias dir="ls-l | grep^d" = ^d = grep everything that starts with d (all directories in this case)
+- alias lmar="ls-l | grep Mar"
+- alias wpa="chmod a+w"
+- alias d="df -h | awk '{print\$6}' | cut -c1-4"     ===>>> \$6 = \ backslash tells thath $6 is not variable     cut -c1-4 to show onlyletters 1-4
+
+CREATING USER AND GLOBAL ALIASES
+USER= /home/user/.bashrc
+GLOBAL = /etc/bashrc
+
+SHELL HISTORY
+- Command "history" = view all commands run
+- ! number of command
+- !215 (very useful)
+- Stored in /home/yourname/.bash_history
+
 What is Shell?
  - It is like a container.
  - Interface between users and kernel/OS
