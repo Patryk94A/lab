@@ -26,14 +26,17 @@ Step 4: Configuring Nginx
 
 vi /etc/nginx/nginx.conf
 vi /etc/nginx/conf.d/myfirstlinuxos.conf
+
 server {
-listen 80;
-server_name 192.168.100.161;
-root /var/www/myfirstlinuxos/html;
-index index.html;
-location / {
-try_files $uri $uri/ =404;
-}
+  listen 80;
+  server_name 192.168.100.161;
+  
+  root /var/www/myfirstlinuxos/html;
+  index index.html;
+  
+  location / {
+    try_files $uri $uri/ =404;
+  }
 }
 
 Step 5: Creating the Directory and Content
@@ -59,18 +62,20 @@ systemctl disable firewalld
 vi /etc/nginx/nginx.conf
 vi /etc/nginx/conf.d/centosserver.conf
 server {
-listen 80;
-server_name 192.168.100.162;
-root /var/www/centosserver/html;
-index index.html;
-location / {
-try_files $uri $uri/ =404;
-}
+  listen 80;
+  server_name 192.168.100.162;
+  
+  root /var/www/centosserver/html;
+  index index.html;
+  
+  location / {
+    try_files $uri $uri/ =404;
+  }
 }
 mkdir -p /var/www/centosserver/html
 cd /var/www/centosserver/html/
 vi index.html
-<h1> Hello from CentOS Server </h1>
+<h1>Hello from CentOS Server</h1>
 nginx -t
 systemctl restart nginx
 http://192.168.100.162 
@@ -78,15 +83,16 @@ http://192.168.100.162
 Step 8: Setting Up a Reverse Proxy
 
 server {
-listen 80;
-server_name 192.168.100.161;
-location / {
-proxy_pass http://192.168.100.162;
-proxy_set_header Host $host;
-proxy_set_header X-Real-IP $remote_addr;
-proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-proxy_set_header X-Forwarded-Proto $scheme;
-}
+  listen 80;
+  server_name 192.168.100.161;
+  
+  location / {
+    proxy_pass http://192.168.100.162;
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+  }
 }
 
 Step 9: Final Testing & Accessing Website Through Reverse Proxy
