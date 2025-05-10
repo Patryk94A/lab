@@ -319,3 +319,34 @@ to block outgoing traffic to specific website
 - host -t a www.facebook.com = find IP address
 firewall-cmd --direct--add-rule ipv4
 filter OUTPUT 0-d 31.13.71.36 -j DROP
+
+TUNE SYSTEM PERFORMANCE
+- TUne is for system tuning Linux system performance d is for daemon
+- rpm -qa | grep tuned
+      - tuned-adm
+      - tuned-adm active    = check active profile
+      - tuned-adm list      = list of profiles
+      - tuned-adm list "profile-name" = change adm profile name
+      - tuned-adm recommand = gives recommenden profile
+      - tuned-adm off        = set it off
+- nice and renice => 40 levels of prio
+      -20 (highest) to 19 (lowest)
+- Top command to check level of nice
+- Nice value is a user-space and prio PR is the process's actual prio that use by Linux kernel. In Linux system prio are 0 to 139 in which 0 to99 for real time and 100 to 139 for users.
+  To view using ps-command
+      - ps axo pid,comm,nice,cls --sort=-nice
+      - nice -n # process-name (# = number)
+      - renice -n # process-name
+      - renice -n 12 PID
+
+RUN CONTAINERS
+- Imaged- containers can be created through images and containers can be converted to images
+- pods - Group of containers deployed together on the host. In the podman logo there are 3 seals grouped together as a pod.
+- podman -v == podman is docker but from RHEL
+- man podman / podman --help
+- podman info = to search a specific image in repo
+- podman search httpd
+- podman images
+- podman pull docker.io/library/httpd = to download available images
+- podman ps = running containers
+- podman stop container-name
