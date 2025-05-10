@@ -350,3 +350,24 @@ RUN CONTAINERS
 - podman pull docker.io/library/httpd = to download available images
 - podman ps = running containers
 - podman stop container-name
+
+ANSIBLE
+- Automationtool, Yaml/Playbook, Installing software, Configure settings
+
+Yaml # Comment Here
+---
+- hosts: localhosts
+  become(this is key): yes(this is target) 
+
+Student:
+    - name: ABC
+      class: 10
+      id: 1001
+    - name:XYZ
+      class: 11
+      id: 1002
+tasks: (this is Section)
+- name: Install Nano text editor (SubSection)
+    dnf:
+      name: vim
+      state: present
