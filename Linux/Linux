@@ -6,3 +6,7 @@ passwd userid
 ls -ltr -> time creation new -> old
 cp -R <source_folder><destination_folder> -> copy folder -R recursive
 
+TO CHECK WHAT IS ON PORT :80
+netstat -tulpn | grep :80
+ss -tulpn | grep :80
+lsof -i :80 | grep LISTEN
