@@ -371,3 +371,15 @@ tasks: (this is Section)
     dnf:
       name: vim
       state: present
+
+OPENVPN
+- dnf install openvpn -y
+- dnf install easy-rsa -y
+      - ls /usr/share/easy-rsa/
+          - cp -rv /usr/share/easy-rsa/3.x.x/* /etc/openvpn/
+  /easyrsa init-pki = let initialize the public key infrastrcture in short PKI for easy-rsa. It creates a directory structure in /etc/openvpn where all the important keys and certificats are stored
+
+PROXY SERVER
+Middle man between your device and internet
+acl = access control list
+
