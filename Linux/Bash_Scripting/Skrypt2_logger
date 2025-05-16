@@ -1,0 +1,27 @@
+IMPORT_DIR=/tmp/import
+echo "creating directory $IMPORT_DIR"
+creating directory /tmp/import            ,using "..."  -> will check for variable $
+
+echo 'creating directory $IMPORT_DIR'
+creating directory $IMPORT_DIR            ,this wont show variable
+
+echo "$IMPORT_DIR and \$IMPORT_DIR"
+/tmp/import and $IMPORT_DIR          => backslash \ tells the shell not to act like variable right after
+
+
+sudo tail /var/log/messages = Logs of OS
+logger "THIS IS TEST!" => This will add that to system logs
+
+#!/bin/bash
+DIRE=/tmp/import
+mode700=700
+
+echo "I change or make a new directory $DIRE"
+mkdir $DIRE
+logger "I have change or created a new directory $DIRE"
+
+echo "I change security mode for user to rwx(700)"
+chmod $mode700 %DIRE
+logger "I have changed security mode $DIRE for $mode700"
+
+exit 0
