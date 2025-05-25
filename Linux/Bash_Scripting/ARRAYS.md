@@ -43,3 +43,20 @@ Venezia Milano Firence Napoli
 
 
 
+#!/bin/bash
+USERS=()
+NAME=''
+while [[ $NAME != 'exit' ]]; do
+  read -p 'Enter username or 'exit' to finish: ' NAME
+  if [[ $NAME != 'exit' ]]; then
+    Users += ($NAME)
+  fi
+done
+
+echo ${USERS[@]}
+for NAME in ${USERS[@]}; do
+  echo "Creating user $NAME...."
+  useradd $NAME
+done
+exit 0
+
