@@ -10,3 +10,5 @@ TO CHECK WHAT IS ON PORT :80
 netstat -tulpn | grep :80
 ss -tulpn | grep :80
 lsof -i :80 | grep LISTEN
+
+realpath auto_push.sh | xclip -selection clipboard    ==>> take full path to the file/scrit/whatever and copy it into clipboard. Useful.
